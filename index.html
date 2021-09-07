@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Weather App for Practice!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+
+  <div class="container my-5 mx-auto">
+    <h1 class="text-muted text-center my-4 ">Weather App</h1>
+
+    <form class="change-location my-4 text-center text-muted">
+      <label for="city">Enter the Location : </label>
+      <input type="text" name="city" class="form-control p-4">
+    </form>
+
+    <div class="card shadow-lg rounded d-none">
+      <img src="https://via.placeholder.com/400x300" class = "time card-img-top">
+      <div class="icon mx-auto text-center">
+        <canvas class = 'icons' width="150" height="150"></canvas>
+        <!-- <img src="" alt="" id="icon"> -->
+      </div>
+      <div class="text-muted text-uppercase text-center details">
+        <h5 class="my-3">City Name</h5>
+        <div class="my-3">Weather Condition</div>
+        <div class="display-4 my-4">
+          <span>temp</span>
+          <span>&deg;C</span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="temp_change" class = "d-none"></div>
+
+
+<div id="footer">
+  <!-- <p>Internship Project</p>
+  <p>Submitted To : GSFC University</p>
+  <p>Name : Kshipra Jadav</p>
+  <p>Roll Number : 20BT04013</p> -->
+
+  <table width = "100%" id = "table1" cellpadding = "20px">
+    <tr>
+      <td>Kshipra Jadav</td>
+      <td>20BT04013</td>
+      <td>Semester 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Submitted To : GSFC University</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<script src = "forecast.js"></script>
+<script src="app.js"></script>
+<script src="skycons.js"></script>
+<script src="seticons.js"></script>
+</body>
+</html>
